@@ -1,0 +1,5 @@
+.table-body {
+    scrollbar-width:none;
+    -ms-overflow-style: none;
+    scrollbar-color: #D3E2ED white;
+}

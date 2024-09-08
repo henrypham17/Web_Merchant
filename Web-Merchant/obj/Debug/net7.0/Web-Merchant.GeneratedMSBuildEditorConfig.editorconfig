@@ -1,0 +1,89 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Web_Merchant
+build_property.RootNamespace = Web_Merchant
+build_property.ProjectDir = /Users/quangpham/Document/Project1/Web-Merchant/Web-Merchant/Web-Merchant/
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/quangpham/Document/Project1/Web-Merchant/Web-Merchant/Web-Merchant
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/quangpham/Document/Project1/Web-Merchant/Web-Merchant/Web-Merchant/Views/Account/Sign_in.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9TaWduX2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/quangpham/Document/Project1/Web-Merchant/Web-Merchant/Web-Merchant/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/quangpham/Document/Project1/Web-Merchant/Web-Merchant/Web-Merchant/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/quangpham/Document/Project1/Web-Merchant/Web-Merchant/Web-Merchant/Views/Merchant/Billing.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWVyY2hhbnQvQmlsbGluZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/quangpham/Document/Project1/Web-Merchant/Web-Merchant/Web-Merchant/Views/Merchant/Edit_employee.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWVyY2hhbnQvRWRpdF9lbXBsb3llZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/quangpham/Document/Project1/Web-Merchant/Web-Merchant/Web-Merchant/Views/Merchant/Employee.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWVyY2hhbnQvRW1wbG95ZWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/quangpham/Document/Project1/Web-Merchant/Web-Merchant/Web-Merchant/Views/Merchant/Feedback.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWVyY2hhbnQvRmVlZGJhY2suY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/quangpham/Document/Project1/Web-Merchant/Web-Merchant/Web-Merchant/Views/Merchant/Menu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWVyY2hhbnQvTWVudS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/quangpham/Document/Project1/Web-Merchant/Web-Merchant/Web-Merchant/Views/Merchant/Tables.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWVyY2hhbnQvVGFibGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/quangpham/Document/Project1/Web-Merchant/Web-Merchant/Web-Merchant/Views/Merchant/Warehouse.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWVyY2hhbnQvV2FyZWhvdXNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/quangpham/Document/Project1/Web-Merchant/Web-Merchant/Web-Merchant/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/quangpham/Document/Project1/Web-Merchant/Web-Merchant/Web-Merchant/Views/Shared/Footer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Zvb3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/quangpham/Document/Project1/Web-Merchant/Web-Merchant/Web-Merchant/Views/Shared/Header.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0hlYWRlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/quangpham/Document/Project1/Web-Merchant/Web-Merchant/Web-Merchant/Views/Shared/Layout_Admin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0xheW91dF9BZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/quangpham/Document/Project1/Web-Merchant/Web-Merchant/Web-Merchant/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/quangpham/Document/Project1/Web-Merchant/Web-Merchant/Web-Merchant/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/quangpham/Document/Project1/Web-Merchant/Web-Merchant/Web-Merchant/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/quangpham/Document/Project1/Web-Merchant/Web-Merchant/Web-Merchant/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-m8m6j0sei1

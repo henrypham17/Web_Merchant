@@ -1,0 +1,120 @@
+@{
+ViewData["Title"] = "Edit-employee";
+Layout = "~/Views/Shared/Layout_Admin.cshtml";
+}
+
+<div class="employee-detail">
+    <div class="employee-navigation">
+        <i class="icofont-swoosh-left ico-back" onclick="goBackToEmployee()"></i>
+        <h1>Chi tiết chỉnh sửa nhân viên</h1>
+    </div>
+    <div class="employee-header">
+        <div class="employee-info">
+            <h2>96 Percent Pháo Đài Láng</h2>
+            <div class="status active"><i class="icofont-check-circled"></i>Đang hoạt động</div>
+        </div>
+    </div>
+
+    <div class="employee-form">
+        <h3>Thông tin nhân viên</h3>
+
+        <!-- Nội dung form vẫn giữ nguyên -->
+        <label for="role">Chọn chức vụ</label>
+        <div class="role-options">
+            <div class="role-option">
+                <input type="radio" id="manager" name="role" value="manager">
+                <div class="role-option-extend">
+                    <label for="manager">Quản lý</label>
+                    <span>Có thể xem dữ liệu và quản lý người dùng</span>
+                </div>
+            </div>
+            <div class="role-option">
+                <input type="radio" id="owner" name="role" value="owner" checked>
+                <div class="role-option-extend">
+                    <label for="owner">Chủ cửa hàng</label>
+                    <span>Có thể xem dữ liệu và quản lý người dùng</span>
+                </div>
+            </div>
+            <div class="role-option">
+                <input type="radio" id="cashier" name="role" value="cashier">
+                <div class="role-option-extend">
+                    <label for="cashier">Thu ngân</label>
+                    <span>Chỉ có thể xem dữ liệu</span>
+                </div>
+            </div>
+        </div>
+
+        <label for="full-name">Tên đầy đủ</label>
+        <input type="text" id="full-name" value="96 Percent Pháo Đài Láng">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" value="96percent.36@gmail.com">
+        <p>Nếu nhân viên này không có email, hãy nhập một địa chỉ email khác mà bạn có thể nhận mật khẩu tạm
+            thời.</p>
+
+        <label for="username">Tên đăng nhập</label>
+        <input type="text" id="username" value="96percent.36@gmail.com">
+        <p>Bạn có thể sử dụng tên người dùng này cho cả ứng dụng GrabMerchant và Portal.</p>
+
+        <label for="phone">Số điện thoại</label>
+        <div class="phone-input">
+            <div class="country-code">
+                <select>
+                    <option value="+84">🇻🇳 +84</option>
+                </select>
+            </div>
+            <input type="tel" id="phone" placeholder="87800001">
+        </div>
+
+        <button type="submit">Cập nhật chi tiết</button>
+    </div>
+</div>
+
+
+<script>
+    function goBackToEmployee() {
+        window.location.href = "@Url.Action("Employee", "Merchant")";
+    }
+
+</script>
+
+<script>
+    // Hàm lấy tham số URL
+    function getParameterByName(name) {
+        const url = window.location.href;
+        name = name.replace(/[\[\]]/g, '\\$&');
+        const regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)');
+        const results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, ' '));
+    }
+
+    // Kiểm tra tham số mode
+    const mode = getParameterByName('mode');
+
+    if (mode === 'add') {
+        document.querySelector('.employee-navigation h1').textContent = 'Thêm mới nhân viên';
+        document.querySelector('.employee-header h2').textContent = 'Thêm mới nhân viên';
+        document.querySelector('.employee-header .status').style.display = 'none'; 
+        document.querySelector('.employee-form button[type="submit"]').textContent = 'Thêm mới';
+
+        // Xóa các giá trị mặc định
+        document.getElementById('full-name').value = '';
+        document.getElementById('email').value = '';
+        document.getElementById('username').value = '';
+        document.getElementById('phone').value = '';
+    }
+</script>
+
+<script>
+    document.getElementById("navigateIcon").addEventListener("click", function () {
+        window.location.href = "@Url.Action("Edit_Employee", "Merchant")";
+    });
+</script>
+
+<script>
+    function goToAddEmployee() {
+        window.location.href = "@Url.Action("Edit_Employee", "Merchant", new { mode = "add" })";
+    }
+</script>

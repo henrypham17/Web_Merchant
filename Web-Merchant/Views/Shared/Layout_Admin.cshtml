@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="apple-touch-icon" sizes="76x76" href="~/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="~/img/favicon.png">
+    <title>
+        Soft UI Dashboard by Creative Tim
+    </title>
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+    <!-- Nucleo Icons -->
+    <link href="~/css/nucleo-icons.css" rel="stylesheet" />
+    <link href="~/css/nucleo-svg.css" rel="stylesheet" />
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="~/fonts/icofont/icofont.css ">
+    <link rel="stylesheet" href="~/fonts/fontawesome/css/all.css">
+    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+    <link href="~/css/nucleo-svg.css" rel="stylesheet" />
+    <!-- CSS Files -->
+    <link id="pagestyle" href="~/css/soft-ui-dashboard.css?v=1.0.7" rel="stylesheet" />
+    <!-- Nepcha Analytics (nepcha.com) -->
+    <!-- Nepcha is a easy-to-use web analytics. No cookies and fully compliant with GDPR, CCPA and PECR. -->
+    <script defer data-site="YOUR_DOMAIN_HERE" src="https://api.nepcha.com/js/nepcha-analytics.js"></script>
+</head>
+
+<body class="g-sidenav-show  bg-gray-100">
+<aside class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3 "
+       id="sidenav-main">
+   <partial name="Header"/>
+</aside>
+<main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
+@RenderBody()
+
+<div class="row my-4">
+    <footer class="footer pt-3  ">
+        <partial name="Footer"/>
+    </footer>
+</div>
+</main>
+<div class="fixed-plugin">
+    <a class="fixed-plugin-button text-dark position-fixed px-3 py-2">
+        <i class="fa fa-cog py-2"> </i>
+    </a>
+    <div class="card shadow-lg ">
+        <div class="card-header pb-0 pt-3 ">
+            <div class="float-start">
+                <h5 class="mt-3 mb-0">Soft UI Configurator</h5>
+                <p>See our dashboard options.</p>
+            </div>
+            <div class="float-end mt-4">
+                <button class="btn btn-link text-dark p-0 fixed-plugin-close-button">
+                    <i class="fa fa-close"></i>
+                </button>
+            </div>
+            <!-- End Toggle Button -->
+        </div>
+        <hr class="horizontal dark my-1">
+        <div class="card-body pt-sm-3 pt-0">
+            <!-- Sidebar Backgrounds -->
+            <div>
+                <h6 class="mb-0">Sidebar Colors</h6>
+            </div>
+            <a href="javascript:void(0)" class="switch-trigger background-color">
+                <div class="badge-colors my-2 text-start">
+            <span class="badge filter bg-gradient-primary active" data-color="primary"
+                  onclick="sidebarColor(this)"></span>
+                    <span class="badge filter bg-gradient-dark" data-color="dark" onclick="sidebarColor(this)"></span>
+                    <span class="badge filter bg-gradient-info" data-color="info" onclick="sidebarColor(this)"></span>
+                    <span class="badge filter bg-gradient-success" data-color="success" onclick="sidebarColor(this)"></span>
+                    <span class="badge filter bg-gradient-warning" data-color="warning" onclick="sidebarColor(this)"></span>
+                    <span class="badge filter bg-gradient-danger" data-color="danger" onclick="sidebarColor(this)"></span>
+                </div>
+            </a>
+            <!-- Sidenav Type -->
+            <div class="mt-3">
+                <h6 class="mb-0">Sidenav Type</h6>
+                <p class="text-sm">Choose between 2 different sidenav types.</p>
+            </div>
+            <div class="d-flex">
+                <button class="btn bg-gradient-primary w-100 px-3 mb-2 active" data-class="bg-transparent"
+                        onclick="sidebarType(this)">Transparent</button>
+                <button class="btn bg-gradient-primary w-100 px-3 mb-2 ms-2" data-class="bg-white"
+                        onclick="sidebarType(this)">White</button>
+            </div>
+            <p class="text-sm d-xl-none d-block mt-2">You can change the sidenav type just on desktop view.</p>
+            <!-- Navbar Fixed -->
+            <div class="mt-3">
+                <h6 class="mb-0">Navbar Fixed</h6>
+            </div>
+            <div class="form-check form-switch ps-0">
+                <input class="form-check-input mt-1 ms-auto" type="checkbox" id="navbarFixed" onclick="navbarFixed(this)">
+            </div>
+            <hr class="horizontal dark my-sm-4">
+            <a class="btn bg-gradient-dark w-100" href="https://www.creative-tim.com/product/soft-ui-dashboard">Free
+                Download</a>
+            <a class="btn btn-outline-dark w-100"
+               href="https://www.creative-tim.com/learning-lab/bootstrap/license/soft-ui-dashboard">View documentation</a>
+            <div class="w-100 text-center">
+                <a class="github-button" href="https://github.com/creativetimofficial/soft-ui-dashboard"
+                   data-icon="octicon-star" data-size="large" data-show-count="true"
+                   aria-label="Star creativetimofficial/soft-ui-dashboard on GitHub">Star</a>
+                <h6 class="mt-3">Thank you for sharing!</h6>
+                <a href="https://twitter.com/intent/tweet?text=Check%20Soft%20UI%20Dashboard%20made%20by%20%40CreativeTim%20%23webdesign%20%23dashboard%20%23bootstrap5&amp;url=https%3A%2F%2Fwww.creative-tim.com%2Fproduct%2Fsoft-ui-dashboard"
+                   class="btn btn-dark mb-0 me-2" target="_blank">
+                    <i class="fab fa-twitter me-1" aria-hidden="true"></i> Tweet
+                </a>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.creative-tim.com/product/soft-ui-dashboard"
+                   class="btn btn-dark mb-0 me-2" target="_blank">
+                    <i class="fab fa-facebook-square me-1" aria-hidden="true"></i> Share
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--   Core JS Files   -->
+<script src="~/js/core/popper.min.js"></script>
+<script src="~/js/core/bootstrap.min.js"></script>
+<script src="~/js/plugins/perfect-scrollbar.min.js"></script>
+<script src="~/js/plugins/smooth-scrollbar.min.js"></script>
+<script src="~/js/plugins/chartjs.min.js"></script>
+<script type="module" src="~/js/firebase-config.js"></script>
+<script>
+    var ctx = document.getElementById("chart-bars").getContext("2d");
+
+    new Chart(ctx, {
+        type: "bar",
+        data: {
+            labels: ["Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+            datasets: [{
+                label: "Sales",
+                tension: 0.4,
+                borderWidth: 0,
+                borderRadius: 4,
+                borderSkipped: false,
+                backgroundColor: "#fff",
+                data: [450, 200, 100, 220, 500, 100, 400, 230, 500],
+                maxBarThickness: 6
+            },],
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    display: false,
+                }
+            },
+            interaction: {
+                intersect: false,
+                mode: 'index',
+            },
+            scales: {
+                y: {
+                    grid: {
+                        drawBorder: false,
+                        display: false,
+                        drawOnChartArea: false,
+                        drawTicks: false,
+                    },
+                    ticks: {
+                        suggestedMin: 0,
+                        suggestedMax: 500,
+                        beginAtZero: true,
+                        padding: 15,
+                        font: {
+                            size: 14,
+                            family: "Open Sans",
+                            style: 'normal',
+                            lineHeight: 2
+                        },
+                        color: "#fff"
+                    },
+                },
+                x: {
+                    grid: {
+                        drawBorder: false,
+                        display: false,
+                        drawOnChartArea: false,
+                        drawTicks: false
+                    },
+                    ticks: {
+                        display: false
+                    },
+                },
+            },
+        },
+    });
+
+
+    var ctx2 = document.getElementById("chart-line").getContext("2d");
+
+    var gradientStroke1 = ctx2.createLinearGradient(0, 230, 0, 50);
+
+    gradientStroke1.addColorStop(1, 'rgba(203,12,159,0.2)');
+    gradientStroke1.addColorStop(0.2, 'rgba(72,72,176,0.0)');
+    gradientStroke1.addColorStop(0, 'rgba(203,12,159,0)'); //purple colors
+
+    var gradientStroke2 = ctx2.createLinearGradient(0, 230, 0, 50);
+
+    gradientStroke2.addColorStop(1, 'rgba(20,23,39,0.2)');
+    gradientStroke2.addColorStop(0.2, 'rgba(72,72,176,0.0)');
+    gradientStroke2.addColorStop(0, 'rgba(20,23,39,0)'); //purple colors
+
+    new Chart(ctx2, {
+        type: "line",
+        data: {
+            labels: ["Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+            datasets: [{
+                label: "Mobile apps",
+                tension: 0.4,
+                borderWidth: 0,
+                pointRadius: 0,
+                borderColor: "#cb0c9f",
+                borderWidth: 3,
+                backgroundColor: gradientStroke1,
+                fill: true,
+                data: [50, 40, 300, 220, 500, 250, 400, 230, 500],
+                maxBarThickness: 6
+
+            },
+                {
+                    label: "Websites",
+                    tension: 0.4,
+                    borderWidth: 0,
+                    pointRadius: 0,
+                    borderColor: "#3A416F",
+                    borderWidth: 3,
+                    backgroundColor: gradientStroke2,
+                    fill: true,
+                    data: [30, 90, 40, 140, 290, 290, 340, 230, 400],
+                    maxBarThickness: 6
+                },
+            ],
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    display: false,
+                }
+            },
+            interaction: {
+                intersect: false,
+                mode: 'index',
+            },
+            scales: {
+                y: {
+                    grid: {
+                        drawBorder: false,
+                        display: true,
+                        drawOnChartArea: true,
+                        drawTicks: false,
+                        borderDash: [5, 5]
+                    },
+                    ticks: {
+                        display: true,
+                        padding: 10,
+                        color: '#b2b9bf',
+                        font: {
+                            size: 11,
+                            family: "Open Sans",
+                            style: 'normal',
+                            lineHeight: 2
+                        },
+                    }
+                },
+                x: {
+                    grid: {
+                        drawBorder: false,
+                        display: false,
+                        drawOnChartArea: false,
+                        drawTicks: false,
+                        borderDash: [5, 5]
+                    },
+                    ticks: {
+                        display: true,
+                        color: '#b2b9bf',
+                        padding: 20,
+                        font: {
+                            size: 11,
+                            family: "Open Sans",
+                            style: 'normal',
+                            lineHeight: 2
+                        },
+                    }
+                },
+            },
+        },
+    });
+</script>
+<script>
+    var win = navigator.platform.indexOf('Win') > -1;
+    if (win && document.querySelector('#sidenav-scrollbar')) {
+        var options = {
+            damping: '0.5'
+        }
+        Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
+    }
+</script>
+
+<script>
+    function toggleDropdown() {
+        var dropdownMenu = document.getElementById('dropdown-menu');
+        dropdownMenu.classList.toggle('show');
+    }
+
+</script>
+
+
+
+
+<script>
+    var win = navigator.platform.indexOf('Win') > -1;
+    if (win && document.querySelector('#sidenav-scrollbar')) {
+        var options = {
+            damping: '0.5'
+        }
+        Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
+    }
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const tabs = document.querySelectorAll(".allmenu");
+        const tabContents = document.querySelectorAll(".tab-content");
+
+        tabs.forEach(tab => {
+            tab.addEventListener("click", function () {
+                // Remove active class from all tabs
+                tabs.forEach(item => item.classList.remove("active"));
+
+                // Hide all tab contents
+                tabContents.forEach(content => content.classList.remove("active"));
+
+                // Add active class to the clicked tab
+                tab.classList.add("active");
+
+                // Show the corresponding tab content
+                const tabContentId = tab.getAttribute("data-tab");
+                document.getElementById(tabContentId).classList.add("active");
+            });
+        });
+    });
+
+
+    let milkTeaCategory = document.getElementById("milktea-category");
+    let fruitTeaCategory = document.getElementById("fruittea-category");
+    let yogurtCategory = document.getElementById("yogurt-category");
+    let socolaCategory = document.getElementById("socola-category");
+
+    document.getElementById("fruittea").onclick = function () {
+        fruitTeaCategory.style.display = "block";
+        milkTeaCategory.style.display = "none";
+        yogurtCategory.style.display = "none";
+        socolaCategory.style.display = "none";
+    };
+
+    document.getElementById("milktea").onclick = function () {
+        milkTeaCategory.style.display = "block";
+        fruitTeaCategory.style.display = "none";
+        yogurtCategory.style.display = "none";
+        socolaCategory.style.display = "none";
+    };
+
+    document.getElementById("yogurt").onclick = function () {
+        yogurtCategory.style.display = "block";
+        milkTeaCategory.style.display = "none";
+        fruitTeaCategory.style.display = "none";
+        socolaCategory.style.display = "none";
+    };
+
+    document.getElementById("socola").onclick = function () {
+        socolaCategory.style.display = "block";
+        milkTeaCategory.style.display = "none";
+        yogurtCategory.style.display = "none";
+        fruitTeaCategory.style.display = "none";
+    };
+
+</script>
+
+<script>
+    document.querySelectorAll('.tableview-cell').forEach(function (cell) {
+        cell.addEventListener('click', function () {
+            openPopup();
+        });
+    });
+
+    function openPopup() {
+        document.getElementById('editPopup').style.display = 'block';
+        document.querySelector('.dark-overlay').style.display = 'block';
+    }
+
+    function closePopup() {
+        document.getElementById('editPopup').style.display = 'none';
+        document.querySelector('.dark-overlay').style.display = 'none';
+    }
+</script>
+
+<script>
+    var ctx2 = document.getElementById("chart-line").getContext("2d");
+
+    var gradientStroke1 = ctx2.createLinearGradient(0, 230, 0, 50);
+
+    gradientStroke1.addColorStop(1, 'rgba(203,12,159,0.2)');
+    gradientStroke1.addColorStop(0.2, 'rgba(72,72,176,0.0)');
+    gradientStroke1.addColorStop(0, 'rgba(203,12,159,0)'); //purple colors
+
+    var gradientStroke2 = ctx2.createLinearGradient(0, 230, 0, 50);
+
+    gradientStroke2.addColorStop(1, 'rgba(20,23,39,0.2)');
+    gradientStroke2.addColorStop(0.2, 'rgba(72,72,176,0.0)');
+    gradientStroke2.addColorStop(0, 'rgba(20,23,39,0)'); //purple colors
+
+    let seletedTime = document.getElementById("selected-time");
+    let sevenDays = document.getElementById("7days");
+    let lastWeek = document.getElementById("lastweek");
+    let thirtyDays = document.getElementById("30days");
+    let lastMonth = document.getElementById("lastmonth");
+    let ninetyDays = document.getElementById("90days");
+    let labels = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+    let data1 = [50, 40, 300, 220, 500, 250, 400, 230, 500];
+    let data2 = [30, 90, 40, 140, 290, 290, 340, 230, 400];
+    let myChart = null;
+
+    function getLast7DaysLabels() {
+        const labels = [];
+        const daysOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+        for (let i = 6; i >= 0; i--) {
+            const date = new Date();
+            date.setDate(date.getDate() - i);
+            labels.push(daysOfWeek[date.getDay()]);
+        }
+
+        return labels;
+    }
+
+    function getLast30DaysLabels() {
+        const labels = [];
+        const options = { day: 'numeric', month: 'short' };
+
+        for (let i = 0; i < 30; i += 3) {
+            const date = new Date();
+            date.setDate(date.getDate() - i);
+            const label = date.toLocaleDateString('en-GB', options);
+            labels.push(label);
+        }
+
+        return labels.reverse();
+    }
+
+    sevenDays.onclick = function () {
+        seletedTime.innerText = "Trong Vòng 7 Ngày qua"
+        if (myChart) myChart.destroy();
+        labels = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+        data1 = [50, 40, 300, 220, 500, 250, 400, 230, 500];
+        data2 = [30, 90, 40, 140, 290, 290, 340, 230, 400];
+        createChart(ctx2, labels, data1, data2)
+    }
+
+    lastWeek.onclick = function () {
+        seletedTime.innerText = "Tuan Truoc"
+        if (myChart) myChart.destroy();
+        labels = getLast7DaysLabels();
+        data1 = [40, 50, 60, 90, 100, 50, 50];
+        data2 = [30, 90, 40, 140, 290, 290, 50];
+        createChart(ctx2, labels, data1, data2)
+    }
+
+    thirtyDays.onclick = function () {
+        seletedTime.innerText = "Trong Vòng 30 Ngày qua"
+        if (myChart) myChart.destroy();
+        labels = getLast30DaysLabels();
+        data1 = [500, 400, 242, 543, 550, 549, 500, 400, 242, 543, 550, 549];
+        data2 = [432, 34, 242, 534, 231, 91, 500, 400, 242, 543, 550, 549];
+        createChart(ctx2, labels, data1, data2)
+    }
+
+    lastMonth.onclick = function () {
+        seletedTime.innerText = "Thang Truoc"
+        if (myChart) myChart.destroy();
+        labels = ["1 Aug", "4 Aug", "7 Aug", "10 Aug", "13 Aug", "16 Aug", "19 Aug", "22 Aug", "25 Aug", "28 Aug"];
+        data1 = [500, 400, 242, 543, 550, 549, 500, 400, 242, 543, 550, 549];
+        data2 = [432, 34, 242, 534, 231, 91, 500, 400, 242, 543, 550, 549];
+        createChart(ctx2, labels, data1, data2)
+    }
+
+
+    function createChart(ctx, labels, data1, data2) {
+        myChart = new Chart(ctx2, {
+            type: "bar",
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: "BLABLA",
+                    tension: 0.4,
+                    borderWidth: 0,
+                    pointRadius: 0,
+                    borderColor: "green",
+                    borderWidth: 3,
+                    backgroundColor: "green",
+                    fill: true,
+                    data: data1,
+                    maxBarThickness: 40
+
+                },
+                    {
+                        label: "HAHAHAHA",
+                        tension: 0.4,
+                        borderWidth: 0,
+                        pointRadius: 0,
+                        borderColor: "#3A416F",
+                        borderWidth: 3,
+                        backgroundColor: "blue",
+                        fill: true,
+                        data: data2,
+                        maxBarThickness: 40
+                    },
+                ],
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: false,
+                    }
+                },
+                interaction: {
+                    intersect: false,
+                    mode: 'index',
+                },
+                scales: {
+                    y: {
+                        grid: {
+                            drawBorder: false,
+                            display: true,
+                            drawOnChartArea: true,
+                            drawTicks: false,
+                            borderDash: [5, 5]
+                        },
+                        ticks: {
+                            display: true,
+                            padding: 10,
+                            color: '#b2b9bf',
+                            font: {
+                                size: 11,
+                                family: "Open Sans",
+                                style: 'normal',
+                                lineHeight: 2
+                            },
+                        }
+                    },
+                    x: {
+                        grid: {
+                            drawBorder: false,
+                            display: false,
+                            drawOnChartArea: false,
+                            drawTicks: false,
+                            borderDash: [5, 5]
+                        },
+                        ticks: {
+                            display: true,
+                            color: '#b2b9bf',
+                            padding: 20,
+                            font: {
+                                size: 11,
+                                family: "Open Sans",
+                                style: 'normal',
+                                lineHeight: 2
+                            },
+                        }
+                    },
+                },
+            },
+        });
+    }
+    sevenDays.click();
+
+</script>
+
+<script>
+    var win = navigator.platform.indexOf('Win') > -1;
+    if (win && document.querySelector('#sidenav-scrollbar')) {
+        var options = {
+            damping: '0.5'
+        }
+        Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
+    }
+</script>
+<script>
+    function toggleDropdown() {
+        var dropdownMenu = document.getElementById('dropdown-menu');
+        dropdownMenu.classList.toggle('show');
+    }
+</script>
+<script>
+    function toggleDropdown(event, menuId) {
+        event.stopPropagation(); // Ngăn sự kiện click lan đến document
+        const dropdownMenu = document.getElementById(menuId);
+        const allDropdowns = document.querySelectorAll('.dropdown-menu');
+
+        // Đóng tất cả các dropdown khác
+        allDropdowns.forEach(menu => {
+            if (menu !== dropdownMenu) {
+                menu.classList.remove('show');
+            }
+        });
+
+        // Hiển thị hoặc ẩn dropdown được click
+        dropdownMenu.classList.toggle('show');
+    }
+
+    // Đóng dropdown khi click ra ngoài
+    document.addEventListener('click', function (event) {
+        const allDropdowns = document.querySelectorAll('.dropdown-menu');
+        allDropdowns.forEach(menu => {
+            if (!menu.contains(event.target)) {
+                menu.classList.remove('show');
+            }
+        });
+    });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    const ctx = document.getElementById('disconnectChart').getContext('2d');
+    const disconnectChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: ['', '22 Thg 08', '23 Thg 08', '24 Thg 08', '25 Thg 08', '26 Thg 08', '27 Thg 08', '28 Thg 08', ''],
+            datasets: [{
+                label: 'Tỷ lệ ngắt kết nối',
+                data: [null, 0, 0, 0, 0, 0, 0, 0, null],
+                borderColor: 'green',
+                borderWidth: 2,
+                fill: false,
+                pointRadius: 5,
+                pointBackgroundColor: 'green',
+                pointHoverRadius: 7,
+                pointHoverBackgroundColor: 'green',
+            }]
+        },
+        options: {
+            scales: {
+                x: {
+                    beginAtZero: false,
+                    grid: {
+                        display: false, // Loại bỏ các ô con
+                    },
+                    ticks: {
+                        padding: 20, // Tạo khoảng cách giữa nhãn và trục
+                    }
+                },
+                y: {
+                    beginAtZero: true,
+                    grid: {
+                        display: false, // Loại bỏ các ô con
+                    },
+                    ticks: {
+                        callback: function (value) {
+                            return value + '%';
+                        }
+                    }
+                }
+            },
+            layout: {
+                padding: {
+                    left: 20, // Tạo khoảng cách với bên trái
+                    right: 20, // Tạo khoảng cách với bên phải
+                }
+            },
+            plugins: {
+                legend: {
+                    display: false,
+                },
+                tooltip: {
+                    mode: 'index', // Hiển thị tooltip cho các mục dữ liệu trên cùng một trục X
+                    intersect: false, // Cho phép hiển thị tooltip khi di chuột gần trục X mà không cần chính xác vào điểm dữ liệu
+                    callbacks: {
+                        label: function (context) {
+                            return `${context.parsed.y}% • 0 phút`;
+                        }
+                    },
+                    backgroundColor: '#2c2c2c', // Màu nền của tooltip
+                    titleColor: '#fff', // Màu chữ của tiêu đề trong tooltip
+                    bodyColor: '#fff',  // Màu chữ của nội dung trong tooltip
+                    borderColor: '#2c2c2c',  // Màu viền của tooltip
+                    borderWidth: 1,  // Độ rộng của viền
+                    cornerRadius: 4,  // Độ cong của góc tooltip
+                },
+            },
+            hover: {
+                mode: 'index',
+                intersect: false // Hiển thị khi di chuột gần trục X
+            }
+        }
+    });
+</script>
+
+<script>
+    // Data for the chart
+    const data = {
+        totalCustomers: 6,
+        percentageChange: "0.00%",
+        barHeights: [
+            { green: 50, darkGreen: 100 }, // height in percentage
+            { green: 25, darkGreen: 0 }    // height in percentage
+        ],
+        labels: [
+            "19 Thg 08 2024 - 25 Thg 08 2024",
+            "26 Thg 08 2024 - 1 Thg 09 2024"
+        ]
+    };
+
+    // Update the chart with data
+    document.getElementById("total-customers").textContent = data.totalCustomers;
+    document.getElementById("percentage-change").textContent = `${data.percentageChange} so với 7 ngày trước`;
+
+    document.getElementById("bar1").querySelector(".green-bar").style.height = `${data.barHeights[0].green}%`;
+    document.getElementById("bar1").querySelector(".dark-green-bar").style.height = `${data.barHeights[0].darkGreen}%`;
+
+    document.getElementById("bar2").querySelector(".green-bar").style.height = `${data.barHeights[1].green}%`;
+
+    document.getElementById("label1").textContent = data.labels[0];
+    document.getElementById("label2").textContent = data.labels[1];
+
+</script>
+
+<!-- Github buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
+<script src="~/js/soft-ui-dashboard.min.js?v=1.0.7"></script>
+<div class="dark-overlay"></div>
+</body>
+
+</html>

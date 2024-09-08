@@ -1,0 +1,740 @@
+@{
+    Layout = "~/Views/Shared/Layout_admin.cshtml";
+}
+
+<nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl" id="navbarBlur"
+     navbar-scroll="true">
+    <div class="container-fluid py-1 px-3">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
+                <li class="breadcrumb-item text-sm text-dark active" aria-current="page">Thực đơn</li>
+            </ol>
+            <h10 class="welcome-header font-weight-bolder mb-0">Chào mừng bạn!</h10>
+        </nav>
+        <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
+            <div class="ms-md-auto pe-md-3 d-flex align-items-center">
+                <div class="input-group">
+                    <span class="input-group-text text-body"><i class="fas fa-search" aria-hidden="true"></i></span>
+                    <input type="text" class="form-control" placeholder="Type here...">
+                </div>
+            </div>
+            <ul class="navbar-nav  justify-content-end">
+                <li class="nav-item d-flex align-items-center">
+                    <a class="btn btn-outline-primary btn-sm mb-0 me-3" target="_blank"
+                       href="https://www.creative-tim.com/builder?ref=navbar-soft-ui-dashboard">Online Builder</a>
+                </li>
+                <li class="nav-item d-flex align-items-center">
+                    <a href="javascript:;" class="nav-link text-body font-weight-bold px-0">
+                        <i class="fa fa-user me-sm-1"></i>
+                        <span class="d-sm-inline d-none">Sign In</span>
+                    </a>
+                </li>
+                <li class="nav-item d-xl-none ps-3 d-flex align-items-center">
+                    <a href="javascript:;" class="nav-link text-body p-0" id="iconNavbarSidenav">
+                        <div class="sidenav-toggler-inner">
+                            <i class="sidenav-toggler-line"></i>
+                            <i class="sidenav-toggler-line"></i>
+                            <i class="sidenav-toggler-line"></i>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item px-3 d-flex align-items-center">
+                    <a href="javascript:;" class="nav-link text-body p-0">
+                        <i class="fa fa-cog fixed-plugin-button-nav cursor-pointer"></i>
+                    </a>
+                </li>
+                <li class="nav-item dropdown pe-2 d-flex align-items-center">
+                    <a href="javascript:;" class="nav-link text-body p-0" id="dropdownMenuButton" data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        <i class="fa fa-bell cursor-pointer"></i>
+                    </a>
+                    <ul class="dropdown-menu  dropdown-menu-end  px-2 py-3 me-sm-n4" aria-labelledby="dropdownMenuButton">
+                        <li class="mb-2">
+                            <a class="dropdown-item border-radius-md" href="javascript:;">
+                                <div class="d-flex py-1">
+                                    <div class="my-auto">
+                                        <img src="~/img/team-2.jpg" class="avatar avatar-sm  me-3 ">
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center">
+                                        <h6 class="text-sm font-weight-normal mb-1">
+                                            <span class="font-weight-bold">New message</span> from Laur
+                                        </h6>
+                                        <p class="text-xs text-secondary mb-0 ">
+                                            <i class="fa fa-clock me-1"></i>
+                                            13 minutes ago
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a class="dropdown-item border-radius-md" href="javascript:;">
+                                <div class="d-flex py-1">
+                                    <div class="my-auto">
+                                        <img src="~/img/small-logos/logo-spotify.svg"
+                                             class="avatar avatar-sm bg-gradient-dark  me-3 ">
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center">
+                                        <h6 class="text-sm font-weight-normal mb-1">
+                                            <span class="font-weight-bold">New album</span> by Travis Scott
+                                        </h6>
+                                        <p class="text-xs text-secondary mb-0 ">
+                                            <i class="fa fa-clock me-1"></i>
+                                            1 day
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item border-radius-md" href="javascript:;">
+                                <div class="d-flex py-1">
+                                    <div class="avatar avatar-sm bg-gradient-secondary  me-3  my-auto">
+                                        <svg width="12px" height="12px" viewBox="0 0 43 36" version="1.1"
+                                             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <title>credit-card</title>
+                                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <g transform="translate(-2169.000000, -745.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                                                    <g transform="translate(1716.000000, 291.000000)">
+                                                        <g transform="translate(453.000000, 454.000000)">
+                                                            <path class="color-background"
+                                                                  d="M43,10.7482083 L43,3.58333333 C43,1.60354167 41.3964583,0 39.4166667,0 L3.58333333,0 C1.60354167,0 0,1.60354167 0,3.58333333 L0,10.7482083 L43,10.7482083 Z"
+                                                                  opacity="0.593633743"></path>
+                                                            <path class="color-background"
+                                                                  d="M0,16.125 L0,32.25 C0,34.2297917 1.60354167,35.8333333 3.58333333,35.8333333 L39.4166667,35.8333333 C41.3964583,35.8333333 43,34.2297917 43,32.25 L43,16.125 L0,16.125 Z M19.7083333,26.875 L7.16666667,26.875 L7.16666667,23.2916667 L19.7083333,23.2916667 L19.7083333,26.875 Z M35.8333333,26.875 L28.6666667,26.875 L28.6666667,23.2916667 L35.8333333,23.2916667 L35.8333333,26.875 Z">
+                                                            </path>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center">
+                                        <h6 class="text-sm font-weight-normal mb-1">
+                                            Payment successfully completed
+                                        </h6>
+                                        <p class="text-xs text-secondary mb-0 ">
+                                            <i class="fa fa-clock me-1"></i>
+                                            2 days
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- End Navbar -->
+<div class="container-fluid py-4 inventory-container">
+    <h1>96 Percent Pháo Đài Láng</h1>
+    <div class="tab-menu">
+        <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-tab1" data-bs-toggle="tab" data-bs-target="#tab1" type="button"
+                        role="tab" aria-controls="tab1" aria-selected="true">TỔNG QUAN MENU</button>
+                <button class="nav-link" id="nav-tab2" data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab"
+                        aria-controls="tab2" aria-selected="false">TÙY CHỌN NHÓM</button>
+                <button class="nav-link" id="nav-tab3" data-bs-toggle="tab" data-bs-target="#tab3" type="button" role="tab"
+                        aria-controls="tab3" aria-selected="false">CẬP NHẬT HÀNG LOẠT</button>
+            </div>
+        </nav>
+    </div>
+    <div class="tab-content" id="nav-tabContent">
+        <div class="menu-controls">
+            <div class="menu-controls-left dropdown">
+                <button class="dropdown-toggle">Thêm mới</button>
+                <div class="dropdown">
+                    <button class="dropdown-toggle">Tất cả lịch bán</button>
+                    <!-- Dropdown content can be added here if needed -->
+                </div>
+            </div>
+            <input type="text" class="search-bar" placeholder="Tìm theo tên món">
+        </div>
+
+        <div class="inventory-table tab-pane setup-tab fade show active" id="tab1" role="tabpanel"
+             aria-labelledby="nav-tab1">
+            <div class="setup-tab1" style="display:flex; flex-direction:row;">
+                <div class=""
+                     style="width: 270px; border-right-width: 10px; border-color: black; border-right: 1px solid #ddd;">
+                    <div class="table-header">
+                        <div class="header-cell">DANH MỤC</div>
+                    </div>
+                    <div class="table-body">
+                        <div class="tableview-cell" style="cursor: pointer;" id="milktea">
+                            <div class="category cell category">Trà Sữa </div>
+                            <span class="badge">9</span>
+                        </div>
+                        <div class="tableview-cell" style="cursor: pointer;" id="fruittea">
+                            <div class="category cell category">Trà Trái Cây </div>
+                            <span class="badge">12</span>
+                        </div>
+                        <div class="tableview-cell" style="cursor: pointer;" id="yogurt">
+                            <div class="category cell category">Sữa Chua Uống </div>
+                            <span class="badge">7</span>
+                        </div>
+                        <div class="tableview-cell" style="cursor: pointer;" id="socola">
+                            <div class="category cell category">Socola Và Cafe </div>
+                            <span class="badge">9</span>
+                        </div>
+                        <!-- Add more rows as needed -->
+                    </div>
+                </div>
+                <div class="" style="	flex: 1 1 0%;">
+                    <div class="table-header">
+                        <div class="header-cell">Món</div>
+                    </div>
+                    <div id="milktea-category" class="table-body" style="max-height:500px; overflow:auto">
+                        <div class="tableview-cell tab-element">
+                            <div class="cell category" style="display: flex; justify-content:start; align-items:center;">
+                                <div
+                                    style="width:70px; padding:5px; height: 70px;  margin-right:10px; border-radius:10px; align-items:center; color:gray; justify-content:center;	text-align: center; background-color:rgb(232, 226, 226)">
+                                    No photo</div>
+                                <div>
+                                    <span>Hồng trà sữa</span>
+                                    <br>
+                                    <span style="color: gray; font-weight:5px">30.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tableview-cell tab-element">
+                            <div class="cell category" style="display: flex; justify-content:start; align-items:center;">
+                                <div
+                                    style="width:70px; padding:5px; height: 70px;  margin-right:10px; border-radius:10px; align-items:center; color:gray; justify-content:center;	text-align: center; background-color:rgb(232, 226, 226)">
+                                    No photo</div>
+                                <div>
+                                    <span>Hồng trà sữa</span>
+                                    <br>
+                                    <span style="color: gray; font-weight:5px">30.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tableview-cell tab-element">
+                            <div class="cell category" style="display: flex; justify-content:start; align-items:center;">
+                                <div
+                                    style="width:70px; padding:5px; height: 70px;  margin-right:10px; border-radius:10px; align-items:center; color:gray; justify-content:center;	text-align: center; background-color:rgb(232, 226, 226)">
+                                    No photo</div>
+                                <div>
+                                    <span>Hồng trà sữa</span>
+                                    <br>
+                                    <span style="color: gray; font-weight:5px">30.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tableview-cell tab-element">
+                            <div class="cell category" style="display: flex; justify-content:start; align-items:center;">
+                                <div
+                                    style="width:70px; padding:5px; height: 70px;  margin-right:10px; border-radius:10px; align-items:center; color:gray; justify-content:center;	text-align: center; background-color:rgb(232, 226, 226)">
+                                    No photo</div>
+                                <div>
+                                    <span>Hồng trà sữa</span>
+                                    <br>
+                                    <span style="color: gray; font-weight:5px">30.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tableview-cell tab-element">
+                            <div class="cell category" style="display: flex; justify-content:start; align-items:center;">
+                                <div
+                                    style="width:70px; padding:5px; height: 70px;  margin-right:10px; border-radius:10px; align-items:center; color:gray; justify-content:center;	text-align: center; background-color:rgb(232, 226, 226)">
+                                    No photo</div>
+                                <div>
+                                    <span>Hồng trà sữa</span>
+                                    <br>
+                                    <span style="color: gray; font-weight:5px">30.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tableview-cell tab-element">
+                            <div class="cell category" style="display: flex; justify-content:start; align-items:center;">
+                                <div
+                                    style="width:70px; padding:5px; height: 70px;  margin-right:10px; border-radius:10px; align-items:center; color:gray; justify-content:center;	text-align: center; background-color:rgb(232, 226, 226)">
+                                    No photo</div>
+                                <div>
+                                    <span>Hồng trà sữa</span>
+                                    <br>
+                                    <span style="color: gray; font-weight:5px">30.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tableview-cell tab-element">
+                            <div class="cell category" style="display: flex; justify-content:start; align-items:center;">
+                                <div
+                                    style="width:70px; padding:5px; height: 70px;  margin-right:10px; border-radius:10px; align-items:center; color:gray; justify-content:center;	text-align: center; background-color:rgb(232, 226, 226)">
+                                    No photo</div>
+                                <div>
+                                    <span>Hồng trà sữa</span>
+                                    <br>
+                                    <span style="color: gray; font-weight:5px">30.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more rows as needed -->
+                    </div>
+
+                    <div id="fruittea-category" class="table-body" style="max-height:500px; overflow:auto; display:none;">
+                        <div class="tableview-cell tab-element">
+                            <div class="cell category" style="display: flex; justify-content:start; align-items:center;">
+                                <div
+                                    style="width:70px; padding:5px; height: 70px;  margin-right:10px; border-radius:10px; align-items:center; color:gray; justify-content:center;	text-align: center; background-color:rgb(232, 226, 226)">
+                                    No photo</div>
+                                <div>
+                                    <span>Sicular</span>
+                                    <br>
+                                    <span style="color: gray; font-weight:5px">30.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tableview-cell tab-element">
+                            <div class="cell category" style="display: flex; justify-content:start; align-items:center;">
+                                <div
+                                    style="width:70px; padding:5px; height: 70px;  margin-right:10px; border-radius:10px; align-items:center; color:gray; justify-content:center;	text-align: center; background-color:rgb(232, 226, 226)">
+                                    No photo</div>
+                                <div>
+                                    <span>Sicular</span>
+                                    <br>
+                                    <span style="color: gray; font-weight:5px">30.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tableview-cell tab-element">
+                            <div class="cell category" style="display: flex; justify-content:start; align-items:center;">
+                                <div
+                                    style="width:70px; padding:5px; height: 70px;  margin-right:10px; border-radius:10px; align-items:center; color:gray; justify-content:center;	text-align: center; background-color:rgb(232, 226, 226)">
+                                    No photo</div>
+                                <div>
+                                    <span>Sicular</span>
+                                    <br>
+                                    <span style="color: gray; font-weight:5px">30.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tableview-cell tab-element">
+                            <div class="cell category" style="display: flex; justify-content:start; align-items:center;">
+                                <div
+                                    style="width:70px; padding:5px; height: 70px;  margin-right:10px; border-radius:10px; align-items:center; color:gray; justify-content:center;	text-align: center; background-color:rgb(232, 226, 226)">
+                                    No photo</div>
+                                <div>
+                                    <span>Sicular</span>
+                                    <br>
+                                    <span style="color: gray; font-weight:5px">30.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more rows as needed -->
+                    </div>
+
+                    <div id="yogurt-category" class="table-body" style="max-height:500px; overflow:auto; display:none;">
+                        <div class="tableview-cell tab-element">
+                            <div class="cell category" style="display: flex; justify-content:start; align-items:center;">
+                                <div
+                                    style="width:70px; padding:5px; height: 70px;  margin-right:10px; border-radius:10px; align-items:center; color:gray; justify-content:center;	text-align: center; background-color:rgb(232, 226, 226)">
+                                    No photo</div>
+                                <div>
+                                    <span>Sữa chua thường</span>
+                                    <br>
+                                    <span style="color: gray; font-weight:5px">30.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tableview-cell tab-element">
+                            <div class="cell category" style="display: flex; justify-content:start; align-items:center;">
+                                <div
+                                    style="width:70px; padding:5px; height: 70px;  margin-right:10px; border-radius:10px; align-items:center; color:gray; justify-content:center;	text-align: center; background-color:rgb(232, 226, 226)">
+                                    No photo</div>
+                                <div>
+                                    <span>Sữa chua thường</span>
+                                    <br>
+                                    <span style="color: gray; font-weight:5px">30.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tableview-cell tab-element">
+                            <div class="cell category" style="display: flex; justify-content:start; align-items:center;">
+                                <div
+                                    style="width:70px; padding:5px; height: 70px;  margin-right:10px; border-radius:10px; align-items:center; color:gray; justify-content:center;	text-align: center; background-color:rgb(232, 226, 226)">
+                                    No photo</div>
+                                <div>
+                                    <span>Sữa chua thường</span>
+                                    <br>
+                                    <span style="color: gray; font-weight:5px">30.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tableview-cell tab-element">
+                            <div class="cell category" style="display: flex; justify-content:start; align-items:center;">
+                                <div
+                                    style="width:70px; padding:5px; height: 70px;  margin-right:10px; border-radius:10px; align-items:center; color:gray; justify-content:center;	text-align: center; background-color:rgb(232, 226, 226)">
+                                    No photo</div>
+                                <div>
+                                    <span>Sữa chua thường</span>
+                                    <br>
+                                    <span style="color: gray; font-weight:5px">30.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="socola-category" class="table-body" style="max-height: 500px; overflow:auto; display:none;">
+                        <div class="tableview-cell tab-element">
+                            <div class="cell category" style="display: flex; justify-content:start; align-items:center;">
+                                <div
+                                    style="width:70px; padding:5px; height: 70px;  margin-right:10px; border-radius:10px; align-items:center; color:gray; justify-content:center;	text-align: center; background-color:rgb(232, 226, 226)">
+                                    No photo</div>
+                                <div>
+                                    <span>Sicular</span>
+                                    <br>
+                                    <span style="color: gray; font-weight:5px">30.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup" id="editPopup">
+                    <div class="edit-content">
+                        <span class="close-btn" onclick="closePopup()">×</span>
+                        <div class="form-container">
+                            <h2>Chỉnh sửa món</h2>
+                            <form>
+                                <div class="image-upload-container">
+                                    <label for="file-input">
+                                        <div class="image-wrapper">
+                                            <img id="preview-img" src="~/img/add-image.png" alt="Thêm ảnh" />
+                                            <p id="image-label">Thêm ảnh</p>
+                                            <span id="remove-img-icon" class="remove-icon" onclick="removeImage()"
+                                                  style="display: none;">&times;</span>
+                                        </div>
+                                    </label>
+                                    <input id="file-input" type="file" style="display: none;" accept="image/*" />
+
+                                    </label>
+                                    <input id="file-input" type="file" style="display: none;" accept="image/*" />
+                                </div>
+                                <div class="form-group">
+                                    <div class="set-group row">
+                                        <div class="name-menu col-6">
+                                            <label for="tenMon">Tên *</label>
+                                            <input type="text" id="tenMon" name="tenMon" value="Hồng trà sữa" />
+                                        </div>
+                                        <div class="price-menu col-4">
+                                            <label for="giaMon">Giá *</label>
+                                            <div class="price-input">
+                                                <span>₫</span>
+                                                <input type="text" id="giaMon" name="giaMon" value="30000" />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="form-group">
+                                    <label for="moTa">Mô tả</label>
+                                    <textarea id="moTa" name="moTa">Chưa bao gồm topping</textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="danhMuc">Danh mục *</label>
+                                    <select id="danhMuc" name="danhMuc">
+                                        <option value="traSua">Trà Sữa</option>
+                                        <!-- Thêm các tùy chọn khác nếu cần -->
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lichBan">Lịch bán *</label>
+                                    <select id="lichBan" name="lichBan">
+                                        <option value="tatCaGio">Tất cả giờ mở cửa</option>
+                                        <!-- Thêm các tùy chọn khác nếu cần -->
+                                    </select>
+                                    <p class="schedule-note">Thứ 2 - Chủ Nhật: Giờ mở cửa quán - Giờ đóng cửa quán</p>
+                                </div>
+
+                                <!-- Start of new "Tùy chọn nhóm" section -->
+                                <div class="group-options">
+                                    <div class="group-header">
+                                        <span><strong>TÙY CHỌN NHÓM</strong></span>
+                                        <a href="#" class="edit-link">Chỉnh sửa</a>
+                                    </div>
+                                    <div class="group-item">
+                                        <span class="group-label">= Mức đường</span>
+                                        <span class="group-description">5 tùy chọn, vui lòng chọn 1</span>
+                                    </div>
+                                    <div class="group-item">
+                                        <span class="group-label">= Topping</span>
+                                        <span class="group-description">8 tùy chọn, chọn tối đa 4 (không bắt buộc)</span>
+                                    </div>
+                                    <div class="group-item">
+                                        <span class="group-label">= Mức đá</span>
+                                        <span class="group-description">5 tùy chọn, vui lòng chọn 1</span>
+                                    </div>
+                                    <div class="group-item">
+                                        <span class="group-label">= Chọn size</span>
+                                        <span class="group-description">2 tùy chọn, vui lòng chọn 1</span>
+                                    </div>
+                                </div>
+
+                                <!-- End of new "Tùy chọn nhóm" section -->
+
+                                <div class="form-buttons">
+                                    <button type="button" class="preview-btn">Xoá món</button>
+                                    <button type="submit" class="save-btn">Lưu thông tin danh mục</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="inventory-table tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="nav-tab2">
+            <button class="btn btn-primary my-3">+ Tạo nhóm tùy chọn mới</button>
+            <div class="setup-tab" style="display:flex; flex-direction:row;">
+                <div class=""
+                     style="width: 270px; border-right-width: 10px; border-color: black; border-right: 1px solid #ddd;">
+                    <div class="table-header">
+                        <div class="header-cell">NHÓM TUỲ CHỌN</div>
+                    </div>
+                    <div class="table-body">
+                        <div class="tableview-cell" style="cursor: pointer;" id="milktea">
+                            <div class="category cell category">Mức đường </div>
+                            <span class="badge">9</span>
+                        </div>
+                        <div class="tableview-cell" style="cursor: pointer;" id="fruittea">
+                            <div class="category cell category">Topping </div>
+                            <span class="badge">12</span>
+                        </div>
+                        <div class="tableview-cell" style="cursor: pointer;" id="yogurt">
+                            <div class="category cell category">Mức đá </div>
+                            <span class="badge">7</span>
+                        </div>
+                        <div class="tableview-cell" style="cursor: pointer;" id="socola">
+                            <div class="category cell category"> Chọn size </div>
+                            <span class="badge">9</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="" style="	flex: 1 1 0%;">
+                    <div class="table-header">
+                        <div class="header-cell">TUỲ CHỌN</div>
+                    </div>
+                    <div id="milktea-category" class="table-body" style="max-height:500px; overflow:auto">
+                        <div class="tableview-cell">
+                            <div class="cell category" style="display: flex; justify-content:start; align-items:center;">
+
+                                <div>
+                                    <span>100% đường</span>
+                                    <br>
+                                    <span style="color: gray; font-weight:5px"> </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tableview-cell">
+                            <div class="cell category" style="display: flex; justify-content:start; align-items:center;">
+
+                                <div>
+                                    <span>70% đường</span>
+                                    <br>
+                                    <span style="color: gray; font-weight:5px">30.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tableview-cell">
+                            <div class="cell category" style="display: flex; justify-content:start; align-items:center;">
+
+                                <div>
+                                    <span>50% đường</span>
+                                    <br>
+                                    <span style="color: gray; font-weight:5px">30.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tableview-cell">
+                            <div class="cell category" style="display: flex; justify-content:start; align-items:center;">
+
+                                <div>
+                                    <span>30% đường</span>
+                                    <br>
+                                    <span style="color: gray; font-weight:5px">30.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div id="fruittea-category" class="table-body" style="max-height:500px; overflow:auto; display:none;">
+                        <div class="tableview-cell">
+                            <div class="cell category" style="display: flex; justify-content:start; align-items:center;">
+
+                                <div>
+                                    <span>Sicular</span>
+                                    <br>
+                                    <span style="color: gray; font-weight:5px">30.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tableview-cell">
+                            <div class="cell category" style="display: flex; justify-content:start; align-items:center;">
+
+                                <div>
+                                    <span>Sicular</span>
+                                    <br>
+                                    <span style="color: gray; font-weight:5px">30.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tableview-cell">
+                            <div class="cell category" style="display: flex; justify-content:start; align-items:center;">
+
+                                <div>
+                                    <span>Sicular</span>
+                                    <br>
+                                    <span style="color: gray; font-weight:5px">30.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tableview-cell">
+                            <div class="cell category" style="display: flex; justify-content:start; align-items:center;">
+
+                                <div>
+                                    <span>Sicular</span>
+                                    <br>
+                                    <span style="color: gray; font-weight:5px">30.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more rows as needed -->
+                    </div>
+
+                    <div id="yogurt-category" class="table-body" style="max-height:500px; overflow:auto; display:none;">
+                        <div class="tableview-cell">
+                            <div class="cell category" style="display: flex; justify-content:start; align-items:center;">
+
+                                <div>
+                                    <span>Sữa chua thường</span>
+                                    <br>
+                                    <span style="color: gray; font-weight:5px">30.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tableview-cell">
+                            <div class="cell category" style="display: flex; justify-content:start; align-items:center;">
+
+                                <div>
+                                    <span>Sữa chua thường</span>
+                                    <br>
+                                    <span style="color: gray; font-weight:5px">30.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tableview-cell">
+                            <div class="cell category" style="display: flex; justify-content:start; align-items:center;">
+
+                                <div>
+                                    <span>Sữa chua thường</span>
+                                    <br>
+                                    <span style="color: gray; font-weight:5px">30.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tableview-cell">
+                            <div class="cell category" style="display: flex; justify-content:start; align-items:center;">
+
+                                <div>
+                                    <span>Sữa chua thường</span>
+                                    <br>
+                                    <span style="color: gray; font-weight:5px">30.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="socola-category" class="table-body" style="max-height: 500px; overflow:auto; display:none;">
+                        <div class="tableview-cell">
+                            <div class="cell category" style="display: flex; justify-content:start; align-items:center;">
+
+                                <div>
+                                    <span>Sicular</span>
+                                    <br>
+                                    <span style="color: gray; font-weight:5px">30.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="inventory-table tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="nav-tab3">
+            <h2>Cập nhật hàng loạt</h2>
+            <p>Cập nhật hàng loạt giúp bạn quản lý toàn bộ thực đơn hiệu quả hơn. Bạn có thể cập nhật số lượng
+                tồn kho của lên đến 20.000 món cùng một lúc. <a href="#">Tìm hiểu cách cập nhật hàng loạt.</a>
+            </p>
+
+            <div class="btn-container">
+                <button class="btn-edit btn-set-font"><i class="fa-solid fa-pen-to-square set-ico"></i>Chỉnh sửa
+                    tình trạng tồn kho hàng loạt</button>
+                <button class="btn-download btn-set-font"><i class="fa-solid fa-download set-ico"></i>Tải xuống
+                    tình trạng hàng tồn kho hiện tại của bạn</button>
+            </div>
+
+            <h3>Hoạt động</h3>
+
+            <table class="table table-borderless">
+                <thead>
+                <tr>
+                    <th>TÊN TỆP</th>
+                    <th>SỐ LƯỢNG MẶT HÀNG</th>
+                    <th>TRẠNG THÁI</th>
+                    <th>NGÀY</th>
+                    <th>USER EMAIL</th>
+                    <th>DOWNLOAD</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td colspan="6" class="empty-state">
+                        <img src="~/img/update.jpg" alt="No Data">
+                        <p>Cập nhật hàng loạt của bạn sẽ hiển thị ở đây.</p>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="nav-tab3">
+            <h2>Cập nhật hàng loạt</h2>
+            <p>Cập nhật hàng loạt giúp bạn quản lý toàn bộ thực đơn hiệu quả hơn. Bạn có thể cập nhật số lượng
+                tồn kho của lên đến 20.000 món cùng một lúc. <a href="#">Tìm hiểu cách cập nhật hàng loạt.</a>
+            </p>
+
+            <div class="btn-container">
+                <button class="btn-edit btn-set-font"><i class="fa-solid fa-pen-to-square set-ico"></i>Chỉnh sửa
+                    tình trạng tồn kho hàng loạt</button>
+                <button class="btn-download btn-set-font"><i class="fa-solid fa-download set-ico"></i>Tải xuống
+                    tình trạng hàng tồn kho hiện tại của bạn</button>
+            </div>
+
+            <h3>Hoạt động</h3>
+
+            <table class="table table-borderless">
+                <thead>
+                <tr>
+                    <th>TÊN TỆP</th>
+                    <th>SỐ LƯỢNG MẶT HÀNG</th>
+                    <th>TRẠNG THÁI</th>
+                    <th>NGÀY</th>
+                    <th>USER EMAIL</th>
+                    <th>DOWNLOAD</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td colspan="6" class="empty-state">
+                        <img src="~/img/update.jpg" alt="No Data">
+                        <p>Cập nhật hàng loạt của bạn sẽ hiển thị ở đây.</p>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
